@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ServiceNowGurukula"  preserve-order="true" parallel="false">
+ <listeners>
+  <listener class-name="com.servicenow.listener.TestsListenerAdapter"></listener>
+ </listeners>
+  <test name="Gurukul Regression Tests" preserve-order="true" parallel="false">
+    <classes>
+      <class name="com.servicenow.testng.tests.LoginTests"/>
+      <class name="com.servicenow.testng.tests.BranchTests"/>
+      <class name="com.servicenow.testng.tests.StaffTests"/>
+      <class name="com.servicenow.testng.tests.AccountTests"/>
+    </classes>
+  </test>
+</suite>
